@@ -4,10 +4,11 @@
         <title>Trabajo con selectores</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <h1>Trabajo con selectores</h1>
-        <p class="texto">Crea un documento HTML que tenga un título de cabecera de primer nivel “Trabajo
+        <p class="texto"> Crea un documento HTML que tenga un título de cabecera de primer nivel “Trabajo
             con selectores” y a continuación contenga un párrafo, dentro de un artículo, con este
             mismo texto descriptivo de la actividad. Estos dos elementos deben estar presentes
             dentro de una sección (parte diferenciada del documento)
@@ -26,15 +27,13 @@
             Tu nombre y el símbolo de copyright deben conformar un enlace al modelo de licencia
             que quieras para tu documento. </p>
         <div id="foto">
-            <img id="logo" src="orslokcromado.jpg" />
+            <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT3mhxgIRaZ9NhGxPdNIv24l6bQ-kjyAKbT9Q&usqp=CAU" />
         </div>
     </br>
     </br>
-        <div id="box">
-            <a href="www.floridaoberta.com" id="boton" style="color:white" > Cambiar imágen</a>
-        </div>
-        <footer>
-            <p>© Diego Chilet Sanchis - 2020</p>
+        <button id="boton" onclick="cambiarImagenJS()" style="color:white" > Cambiar imágen</button>
+        <footer id="footer">
+            <a href="https://fsf.org/">© Diego Chilet Sanchis - 2020</a>
         </footer>
     </body>
 </html>
