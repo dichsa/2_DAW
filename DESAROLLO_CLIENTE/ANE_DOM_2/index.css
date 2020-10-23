@@ -1,0 +1,52 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    background-color: silver;
+}
+
+p {
+    text-align: center;
+    margin: 100px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#logo {
+    align-content: center;
+    display:block;
+    margin:auto;
+    width:300px;
+    height:200px;
+    border-radius:150px;
+    
+}
+
+#boton {
+    width:140px;
+    height:45px;
+    border-radius:150px;
+    margin: auto;
+    display:block;
+    text-align: center;
+    padding-top: 25px;
+    background-color: #32C9F9;   
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-top: 10px;
+    margin-top: 209px;
+    width: 1920px;
+    height: 20px;
+    position: fixed;
+    text-align: center;
+}
