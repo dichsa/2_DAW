@@ -1,0 +1,90 @@
+<!doctype html> 
+<html>
+    <head>
+        <title>AE3</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    <body marginwidth="100x" marginheight="100x" topmargin="100px" leftmargin="100px" rightmargin="0" bottommargin="0">
+        <span style="font: size 30pt;">
+        </span>
+        <header>
+            <button onclick="botonanteriorpagina()" id="anterior" class="esconderelemento">Pagina anterior</button>
+            <button onclick="botonvalidarpagina1()" id="siguiente">Siguiente pagina</button>
+            <button onclick="validacionformulario()" id="validar" class="esconderelemento">Validar</button>
+        </header>
+        <!-- seccion index -->
+        <div id="pagina1">
+                <h1>DESARROLLO WEB EN ENTORNO CLIENTE</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                URL:<input type="text" id="url"></p>
+                <p id="empty_url" class="esconderelemento">Introduce url</p>
+        </div>
+        <div id="datos_intro">
+            <p id="datos1" class="esconderelemento">Introduce nombre</p>
+            <p id="datos2" class="esconderelemento">Introduce apellido</p>
+            <p id="datos3" class="esconderelemento">Introduce fecha</p>
+            <p id="datos4" class="esconderelemento">Introduce codigo postal</p>
+            <p id="datos5" class="esconderelemento">Introduce provincia</p>
+            <p id="datos6" class="esconderelemento">Introduce municipio</p>
+        </div>
+        <!-- formulario -->
+        <div id="pagina2" class="esconderelemento">
+                <form id="formulario">
+                    <h1>Formulario de acceso</h1>
+                    <label>Nombre:</label> 
+                    <input type="text" id="nombre" name="Nombre" required>
+                    <p id="dato1" class="esconderelemento">Introduce datos</p>
+                    <br>
+                    <br>
+                    <label>Apellido:</label> 
+                    <input type="text" id="apellido" name="Apellido" required>
+                    <p id="dato2" class="esconderelemento">Introduce datos</p>
+                    <br>
+                    <br>
+                    <label for="start">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="trip-start"value="2018-07-22" min="1950-01-01" max="2018-12-31" required>
+                    <p id="dato3" class="esconderelemento">Introduce datos</p>
+                    <br>
+                    <br>
+                    <label><p>Direccion:</label> 
+                    <input type="text" name="direccion"></p>
+                    <br>
+                    <br>
+                    <label>Codigo postal:</label>
+                    <input type="number" id="codigopostal" name="codigo_postal" min="0" max="9" required>
+                    <p id="dato4" class="esconderelemento">Introduce datos</p>
+                    <br>
+                    <br>
+                    <label>Provincia:</label>
+                    <p id="dato5" class="esconderelemento">Introduce datos</p>
+                    <select id="provincia" name="menu" >
+                        <option></option>
+                        <option>Valencia</option>
+                        <option>Castellón</option>
+                        <option>Alicante</option>
+                      </select>
+                    <br>
+                    <br>
+                    <label>Municipio:</label>
+                    <input type="text" id="municipio" name="Municipio" required>
+                    <p id="dato6" class="esconderelemento">Introduce datos</p>
+                    <br>
+                </form>
+        </div>
+        <div id="pagina3" class="esconderelemento">
+            <p id="nombrevalidado"></p>
+            <p id="apellidovalidado"></p>
+            <p id="fechavalidada"></p>
+            <p id="codigopostalvalidado"></p>
+            <p id="provinciavalidada"></p>
+            <p id="municipiovalidado"></p>
+            <p>Si están bien los datos, haz click en siguiente página, en caso de que no, haga click en página anterior</p>
+        </div>
+        <div id="pagina4" class="esconderelemento">
+            <p>Datos enviados, gracias por participar.</p>
+            <button id="terminar">Terminar</button>
+        </div>
+    </body>
+</html>
