@@ -1,0 +1,27 @@
+{
+  "name": "chilet_sanchis__diego_ae4",
+  "version": "0.0.1",
+  "description": "ae4 diego",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dichsa/AE4.git"
+  },
+  "keywords": [
+    "ae4",
+    "chart"
+  ],
+  "author": "Diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dichsa/AE4/issues"
+  },
+  "homepage": "https://github.com/dichsa/AE4#readme",
+  "dependencies": {
+    "chart.js": "^2.9.4",
+    "lodash.merge": "^4.6.2"
+  }
+}
