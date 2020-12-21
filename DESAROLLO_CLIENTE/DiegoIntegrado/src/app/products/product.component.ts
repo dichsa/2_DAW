@@ -11,4 +11,5 @@ export class ProductComponent {
   @Input() descripcion = "";
   @Input() precio = "";
   @Input() stock = "";
+  @Input() url="https://picsum.photos/seed/picsum/200/300"
 }
