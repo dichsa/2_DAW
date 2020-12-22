@@ -6,10 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./product.component.css'],
 })
 export class ProductComponent {
-  @Input() codigoProducto=" ";
-  @Input() nombre = "";
-  @Input() descripcion = "";
-  @Input() precio = "";
-  @Input() stock = "";
-  @Input() url="https://picsum.photos/seed/picsum/200/300"
+  @Input() codigoProducto="102931";
+  @Input() nombre = "Nike Air VaporMax 2020 FK";
+  @Input() descripcion = "Diseñadas para correr y adoptadas por las calles.";
+  @Input() precio = "225€";
+  @Input() stock = "100";
+  @Input() img="https://picsum.photos/seed/picsum/200/300";
 }
