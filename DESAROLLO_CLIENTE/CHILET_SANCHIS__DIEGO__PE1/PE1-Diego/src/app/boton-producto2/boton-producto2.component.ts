@@ -13,7 +13,7 @@ export class BotonProducto2Component implements OnInit {
   }
 
   
-clickAddTodo() {
+eliminar() {
   alert('hola!');
 }
 

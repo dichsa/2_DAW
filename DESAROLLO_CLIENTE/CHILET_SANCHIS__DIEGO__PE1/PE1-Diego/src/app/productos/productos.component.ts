@@ -8,19 +8,23 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent implements OnInit {
-  productos = [] as any;
-  constructor(private httpClient: HttpClient, private route: ActivatedRoute) { }
+  productos = <any>[];
+  constructor(private httpClient: HttpClient) { }
+
   ngOnInit(): void {
-    console.log(`Current route: ${this.route}`);
-    this.route.queryParams.subscribe(params => {
-      console.table(params);
-    });
     this.httpClient.get('http://localhost:8000/api/productos').subscribe(
-      response => {
-        this.productos = response;
+      response => { this.productos = response;
+    console.log(this.productos);});
       }
-    );
+
+    public removeProducto (producto:any) {
+
+      const id = producto.id;
+      const ruta= 'http://localhost:8000/api/producto/'+id;
+
+      this.httpClient.delete(ruta).subscribe(
+        response => { 
+          this.productos = response;
+      });  
+    }
   }
-
-}
-
