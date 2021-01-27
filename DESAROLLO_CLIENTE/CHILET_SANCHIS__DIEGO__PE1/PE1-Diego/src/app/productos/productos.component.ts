@@ -8,7 +8,9 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./productos.component.css']
 })
 export class ProductosComponent implements OnInit {
+
   productos = <any>[];
+  
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
