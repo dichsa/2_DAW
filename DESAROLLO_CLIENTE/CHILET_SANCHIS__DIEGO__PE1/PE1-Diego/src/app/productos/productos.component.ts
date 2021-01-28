@@ -10,7 +10,7 @@ import {ActivatedRoute} from '@angular/router';
 export class ProductosComponent implements OnInit {
 
   productos = <any>[];
-  
+   
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {

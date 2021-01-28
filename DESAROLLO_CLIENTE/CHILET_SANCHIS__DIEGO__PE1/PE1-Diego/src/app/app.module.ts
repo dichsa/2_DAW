@@ -14,7 +14,9 @@ import { BotonProducto2Component } from './boton-producto2/boton-producto2.compo
 import { BotonProductoComponent } from './boton-producto/boton-producto.component';
 import { BotonUsuarioComponent } from './boton-usuario/boton-usuario.component';
 import { BotonUsuario1Component } from './boton-usuario1/boton-usuario1.component';
-import { BotonUsuario2Component } from './boton-usuario2/boton-usuario2.component'; 
+import { BotonUsuario2Component } from './boton-usuario2/boton-usuario2.component';
+import { DetalleProductosComponent } from './detalle-productos/detalle-productos.component';
+import { DetalleUsuariosComponent } from './detalle-usuarios/detalle-usuarios.component'; 
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { BotonUsuario2Component } from './boton-usuario2/boton-usuario2.componen
     BotonProductoComponent,
     BotonUsuarioComponent,
     BotonUsuario1Component,
-    BotonUsuario2Component 
+    BotonUsuario2Component,
+    DetalleProductosComponent,
+    DetalleUsuariosComponent 
   ],
   imports: [
     BrowserModule,

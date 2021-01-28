@@ -8,18 +8,27 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./usuarios.component.css']
 })
 export class UsuariosComponent implements OnInit {
-  usuarios = [] as any;
-  constructor(private httpClient: HttpClient, private route: ActivatedRoute) { }
-  ngOnInit(): void {
-    console.log(`Current route: ${this.route}`);
-    this.route.queryParams.subscribe(params => {
-      console.table(params);
-    });
-    this.httpClient.get('http://localhost:8000/api/usuarios').subscribe(
-      response => {
-        this.usuarios = response;
-      }
-    );
-  }
 
-}
+  usuarios = <any>[];
+
+  constructor(private httpClient: HttpClient) { 
+   }
+
+  ngOnInit(): void {
+
+    this.httpClient.get('http://localhost:8000/api/users').subscribe(
+      response => { this.usuarios = response;
+    console.log(this.usuarios);});
+      }
+
+    public removeusuario (usuario:any) {
+
+      const id = usuario.id;
+      const ruta= 'http://localhost:8000/api/user/'+id;
+
+      this.httpClient.get(ruta).subscribe(
+        response => { 
+          this.usuarios = response;
+      });  
+    }
+  }
