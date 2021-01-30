@@ -21,6 +21,7 @@ import { NuevosProductosComponent } from './productos/nuevos-productos/nuevos-pr
 import { FormsModule } from '@angular/forms';
 import { NuevosUsuariosComponent } from './usuarios/nuevos-usuarios/nuevos-usuarios.component';
 import { AltasUsuariosComponent } from './altas-usuarios/altas-usuarios.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { AltasUsuariosComponent } from './altas-usuarios/altas-usuarios.componen
     DetalleUsuariosComponent,
     NuevosProductosComponent,
     NuevosUsuariosComponent,
-    AltasUsuariosComponent
+    AltasUsuariosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

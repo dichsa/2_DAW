@@ -4,6 +4,7 @@
             <th>Id</th>
             <th>Email</th>
             <th>Password</th>
+            <th>Roles</th>
         </tr>
     </ng-template>
     <ng-template pTemplate="body" let-usuario>
@@ -11,6 +12,7 @@
             <td>{{ usuario.id }}</td>
             <td>{{ usuario.email }}</td>
             <td>{{ usuario.password }}</td>
+            <td>{{ usuario.roles }}</td>
             <!-- <td><button id='{{ producto.id }}' (click)='detalle($event)'>Detalle</button></td> -->
         </tr>
     </ng-template>

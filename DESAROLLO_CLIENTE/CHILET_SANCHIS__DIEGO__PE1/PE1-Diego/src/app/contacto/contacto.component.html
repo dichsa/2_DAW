@@ -1,0 +1,19 @@
+<p-table [value]="contacto">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-contacto>
+        <tr *ngIf="contacto.id==getId">
+            <td>{{ contacto.id }}</td>
+            <td>{{ contacto.name}}</td>
+            <td>{{ contacto.message }}</td>
+            <td>{{ contacto.date }}</td>
+            <!-- <td><button id='{{ producto.id }}' (click)='detalle($event)'>Detalle</button></td> -->
+        </tr>
+    </ng-template>
+</p-table>

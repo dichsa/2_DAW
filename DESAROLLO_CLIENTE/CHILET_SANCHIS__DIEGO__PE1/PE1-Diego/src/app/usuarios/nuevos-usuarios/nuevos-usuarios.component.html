@@ -11,6 +11,12 @@
         <input type="text" class="form-control" name="descripcion" [(ngModel)]="form.password" required
           autocomplete="off">
       </div>
+      <select name="roles" [(ngModel)]="form.roles">
+        <option value='ROLE_ADMIN'>Administrador</option>
+        <option value='ROLE_USER'>Usuario</option>
+    </select>
+    <br>
+    <br>
       <div class="form-group">
         <button type="submit" class="btn btn-success" [disabled]="!f.valid">Crear</button>
       </div>
