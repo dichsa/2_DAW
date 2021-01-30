@@ -16,7 +16,11 @@ import { BotonUsuarioComponent } from './boton-usuario/boton-usuario.component';
 import { BotonUsuario1Component } from './boton-usuario1/boton-usuario1.component';
 import { BotonUsuario2Component } from './boton-usuario2/boton-usuario2.component';
 import { DetalleProductosComponent } from './detalle-productos/detalle-productos.component';
-import { DetalleUsuariosComponent } from './detalle-usuarios/detalle-usuarios.component'; 
+import { DetalleUsuariosComponent } from './detalle-usuarios/detalle-usuarios.component';
+import { NuevosProductosComponent } from './productos/nuevos-productos/nuevos-productos.component'; 
+import { FormsModule } from '@angular/forms';
+import { NuevosUsuariosComponent } from './usuarios/nuevos-usuarios/nuevos-usuarios.component';
+import { AltasUsuariosComponent } from './altas-usuarios/altas-usuarios.component';
 
 
 @NgModule({
@@ -33,13 +37,17 @@ import { DetalleUsuariosComponent } from './detalle-usuarios/detalle-usuarios.co
     BotonUsuario1Component,
     BotonUsuario2Component,
     DetalleProductosComponent,
-    DetalleUsuariosComponent 
+    DetalleUsuariosComponent,
+    NuevosProductosComponent,
+    NuevosUsuariosComponent,
+    AltasUsuariosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TableModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

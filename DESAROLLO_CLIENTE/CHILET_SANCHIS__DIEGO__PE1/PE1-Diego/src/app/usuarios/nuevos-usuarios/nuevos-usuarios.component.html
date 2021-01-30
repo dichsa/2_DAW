@@ -1,0 +1,29 @@
+<div class="container">
+    <h5>Nuevo Usuario</h5>
+    <form name="form" (ngSubmit)='onCreate()' #f="ngForm" novalidate>
+      <div class="form-group">
+        <label for="nombreUsuario">Email: </label>
+        <input type="text" class="form-control" name="nombreUsuario" [(ngModel)]="form.email" required
+          autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Password: </label>
+        <input type="text" class="form-control" name="descripcion" [(ngModel)]="form.password" required
+          autocomplete="off">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success" [disabled]="!f.valid">Crear</button>
+      </div>
+    </form>
+    <div>
+      <button class="btn btn-primary float-left mr-3" (click)="volver()">Volver</button>
+    </div>
+    <br>
+    <br>
+    <div *ngIf="failUsuario" class="float-left">
+      <p class="p-3 bg-danger text-white rounded">Error: {{mensajeFail}}</p>
+    </div>
+    <div *ngIf="creado" class="float-left">
+      <p class="p-3 bg-success text-white rounded">OK: {{mensajeOK}}</p>
+    </div>
+  </div>

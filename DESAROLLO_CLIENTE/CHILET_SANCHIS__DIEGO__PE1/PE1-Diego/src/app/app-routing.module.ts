@@ -6,12 +6,17 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { HomeComponent } from './home/home.component';
 import { DetalleProductosComponent } from './detalle-productos/detalle-productos.component';
 import { DetalleUsuariosComponent } from './detalle-usuarios/detalle-usuarios.component'; 
+import { NuevosProductosComponent } from './productos/nuevos-productos/nuevos-productos.component';
+import { NuevosUsuariosComponent } from './usuarios/nuevos-usuarios/nuevos-usuarios.component';
 
 const routes: Routes = [
   {path: 'productos', component: ProductosComponent},
   {path: 'informes', component: InformesComponent},
   {path: 'usuarios', component: UsuariosComponent},
-  {path: 'detalle-productos/:id', component: DetalleProductosComponent}
+  {path: 'detalle-productos/:id', component: DetalleProductosComponent},
+  {path: 'detalle-usuarios/:id', component: DetalleUsuariosComponent},
+  {path: 'nuevos-productos', component: NuevosProductosComponent},
+  {path: 'nuevos-usuarios', component: NuevosUsuariosComponent}
 ];
 
 @NgModule({

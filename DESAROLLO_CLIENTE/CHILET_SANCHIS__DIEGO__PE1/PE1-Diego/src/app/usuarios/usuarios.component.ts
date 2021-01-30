@@ -26,7 +26,7 @@ export class UsuariosComponent implements OnInit {
       const id = usuario.id;
       const ruta= 'http://localhost:8000/api/user/'+id;
 
-      this.httpClient.get(ruta).subscribe(
+      this.httpClient.delete(ruta).subscribe(
         response => { 
           this.usuarios = response;
       });  
