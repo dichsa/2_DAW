@@ -1,3 +1,10 @@
-tr, th {
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 25%;
     text-align: center;
-}
+    vertical-align: top;
+    border: 1px solid #000;
+ }
