@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-exbutton',
@@ -6,4 +7,9 @@ import {Component} from '@angular/core';
   styleUrls: ['./exbutton.component.css']
 })
 export class EXButtonComponent {
+
+  justDoIt(msg: any) {
+    console.log("Exercise 5 done!");
+}
+
 }
